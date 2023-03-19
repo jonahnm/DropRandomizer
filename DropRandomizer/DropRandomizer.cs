@@ -16,7 +16,7 @@ using System.Linq;
 
 namespace DropRandomizer
 {
-    [BepInPlugin("DropRrandomizer", "Drop Randomizer", "0.0.1")]
+    [BepInPlugin("DropRrandomizer", "Drop Randomizer", "1.0.1")]
     public class DropRandomizer : BaseUnityPlugin
     {
         public static readonly Harmony harmony = new Harmony("droprandomizer");
@@ -79,7 +79,22 @@ namespace DropRandomizer
             TechType.FragmentAnalyzerBlueprintOld,
             TechType.TerraformerFragment,
             TechType.TransfuserFragment,
-            TechType.OrangePetalsPlantSeed
+            TechType.OrangePetalsPlantSeed,
+            TechType.LabContainer,
+            TechType.LabContainer2,
+            TechType.LabContainer3,
+            TechType.LabEquipment1,
+            TechType.LabEquipment2,
+            TechType.LabEquipment3,
+            TechType.ArcadeGorgetoy,
+            TechType.PosterAurora,
+            TechType.StarshipSouvenir,
+            TechType.Poster,
+            TechType.PosterKitty,
+            TechType.PosterExoSuit1,
+            TechType.PosterExoSuit2,
+            TechType.Cap1,
+            TechType.Cap2
         };
         public static List<TechType> vehicleTTs = new()
         {
@@ -125,7 +140,14 @@ namespace DropRandomizer
             TechType.GarryFish,
             TechType.Hoverfish,
             TechType.Transfuser,
-            TechType.Terraformer
+            TechType.Terraformer,
+            TechType.FilteredWater,
+            TechType.Bladderfish,
+            TechType.BarTable,
+            TechType.LabCounter,
+            TechType.StarshipDesk,
+            TechType.SingleWallShelf,
+            TechType.WallShelves
         };
         public void Awake()
         {
@@ -167,7 +189,7 @@ namespace DropRandomizer
         {
             for (var i = 0; i < Enum.GetValues(typeof(TechType)).Length; i++)
             {
-                if (currentrandompool.Count == 221)
+                if (currentrandompool.Count == 207)
                     break;
                 TechType TT = 0;
                 var vals = Enum.GetValues(typeof(TechType));

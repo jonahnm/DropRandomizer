@@ -177,7 +177,7 @@ namespace DropRandomizer
                                 ErrorMessage.main.messages.Remove(prev);
                                 ErrorMessage.main.ReleaseEntry(prev.entry);
                             }
-                            var percent = ((double)DropRandomizer.addedsofar / (double)221) * (double)100;
+                            var percent = ((double)DropRandomizer.addedsofar / (double)207) * (double)100;
                             prevmsg = $"{System.Math.Round(percent)}% done filling the pool!";
                             ErrorMessage.AddMessage(prevmsg);
                             yield return null;
